@@ -5,6 +5,7 @@ exports.up = function (knex) {
       table.increments(); //This will create primary keys that auto-increments
       table.string("courseCode", 128).unique().notNullable();
       table.string("Grade").notNullable();
+      table.string("rawScore").notNullable();
     })
     .createTable("users", (user) => {
       user.increments();
