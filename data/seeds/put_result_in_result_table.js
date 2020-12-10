@@ -1,4 +1,3 @@
-
 exports.seed = function (knex) {
   // Deletes ALL existing entries
   return knex("results")
@@ -35,6 +34,36 @@ exports.seed = function (knex) {
           courseCode: "FRU404",
           Grade: "E",
           rawScore: "40",
+        },
+        {
+          id: 6,
+          courseCode: "MEE487",
+          Grade: "B",
+          rawScore: "69",
+        },
+        {
+          id: 7,
+          courseCode: "EME423",
+          Grade: "E",
+          rawScore: "40",
+        },
+        {
+          id: 8,
+          courseCode: "YOR464",
+          Grade: "E",
+          rawScore: "40",
+        },
+        {
+          id: 9,
+          courseCode: "UGH484",
+          Grade: "A",
+          rawScore: "78",
+        },
+        {
+          id: 10,
+          courseCode: "LRY4174",
+          Grade: "B",
+          rawScore: "62",
         },
       ]);
     });
