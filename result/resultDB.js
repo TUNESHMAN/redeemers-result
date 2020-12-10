@@ -7,12 +7,14 @@ module.exports = {
   getResult, //Function for adding a new form to the database
 };
 
-function postResult({ courseCode, Grade, rawScore }) {
+function postResult({ courseCode, courseTitle, Grade, rawScore }) {
   // This is the SQL equivalent of INSERT INTO forms (doctor_name, department, doctors_rank,task_description) VALUES (data to be added)
   return db("results").insert({
     courseCode: courseCode,
+    courseTitle,
     Grade: Grade,
     rawScore,
+    
   });
 }
 

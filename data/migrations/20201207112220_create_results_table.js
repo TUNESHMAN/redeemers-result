@@ -9,6 +9,7 @@ exports.up = function (knex) {
     .createTable("results", (table) => {
       table.increments(); //This will create primary keys that auto-increments
       table.string("courseCode", 128).unique().notNullable();
+      table.string("courseTitle", 128).unique().notNullable();
       table.string("Grade").notNullable();
       table.string("rawScore").notNullable();
     });
